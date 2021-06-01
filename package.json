@@ -1,0 +1,55 @@
+{
+  "name": "react-native-spinkit-button",
+  "version": "1.0.0",
+  "description": "React Native loading buttons, with react-native-spinkit multiple animated loading indicators",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \\\"No test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taimoorsultani/react-native-spinkit-button.git"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "react-native",
+    "react-ntive-spinkit",
+    "react-native-spinkit-button",
+    "react-native-spinkit-buttons",
+    "react-native-loading-button",
+    "button",
+    "react native",
+    "react native button",
+    "react native loading button",
+    "spinner button",
+    "loader button",
+    "indicator button",
+    "react component"
+  ],
+  "author": {
+    "name": "Muhammad Taimoor Sultani",
+    "email": "taimoor.sultani@icloud.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taimoorsultani/react-native-spinkit-button/issues"
+  },
+  "homepage": "https://github.com/taimoorsultani/react-native-spinkit-button#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-native": "0.64.1",
+    "react-native-spinkit": "^1.5.1"
+  },
+  "peerDependencies": {
+    "prop-types": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-spinkit": "*"
+  }
+}
