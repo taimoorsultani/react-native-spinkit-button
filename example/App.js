@@ -8,41 +8,219 @@
 
 import React, {useState} from 'react';
 import {ScrollView, StatusBar, StyleSheet, Text, View} from 'react-native';
-import Spinner from 'react-native-spinkit';
-
 import SpinkitButton from 'react-native-spinkit-button';
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [onlyTextLoading, setOnlyTextLoading] = useState(false);
+  const [iconAndTextLoading, setIconAndTextLoading] = useState(false);
+  const [onlyIconLoading, setOnlyIconLoading] = useState(false);
 
   const onlyTextClick = () => {
-    setIsLoading(true);
+    setOnlyTextLoading(true);
+    setTimeout(() => {
+      setOnlyTextLoading(false);
+    }, 3000);
+  };
+
+  const iconWithTextClick = () => {
+    setIconAndTextLoading(true);
+    setTimeout(() => {
+      setIconAndTextLoading(false);
+    }, 3000);
+  };
+
+  const onlyIconClick = () => {
+    setOnlyIconLoading(true);
+    setTimeout(() => {
+      setOnlyIconLoading(false);
+    }, 3000);
   };
 
   return (
     <View style={styles.main}>
       <StatusBar barStyle={'light-content'} />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <Text style={styles.text}>React Native Spinkit Buttons</Text>
-        <Spinner
-          isVisible={false}
-          color={'#FFFFFF'}
-          size={20}
-          type={'CircleFlip'}
-        />
-        <SpinkitButton
-          width={270}
-          height={40}
-          borderRadius={11}
-          onPress={onlyTextClick}
-          buttonStyle={[styles.base, styles.soild]}
-          label={'ONLY TEXT'}
-          labelStyle={styles.textButtonStyle}
-          loading={isLoading}
-          size={15}
-          type={'CircleFlip'}
-          color={'#FFFFFF'}
-        />
+        <View style={styles.innerContainer}>
+          <Text style={styles.text}>React Native Spinkit Buttons</Text>
+          <SpinkitButton
+            width={270}
+            height={40}
+            borderRadius={11}
+            onPress={onlyTextClick}
+            buttonStyle={[styles.base, styles.soild]}
+            label={'ONLY TEXT'}
+            labelStyle={styles.textButtonStyle}
+            loading={onlyTextLoading}
+            size={15}
+            type={'CircleFlip'}
+            color={'#FFFFFF'}
+            animationDuration={300}
+          />
+          <SpinkitButton
+            width={270}
+            height={40}
+            borderRadius={11}
+            onPress={iconWithTextClick}
+            buttonStyle={[styles.base]}
+            label={'TEXT with ICON'}
+            labelStyle={styles.textButtonStyle}
+            loading={iconAndTextLoading}
+            labelAndTextContainer={styles.labelAndTextContainer}
+            iconComponent={
+              <Icon
+                name="rocket"
+                size={20}
+                color="#FFFFFF"
+                style={styles.icon}
+              />
+            }
+            size={15}
+            type={'Bounce'}
+            color={'#FFFFFF'}
+            animationDuration={300}
+          />
+          <SpinkitButton
+            width={270}
+            height={40}
+            borderRadius={11}
+            onPress={onlyIconClick}
+            buttonStyle={[styles.base]}
+            labelStyle={styles.textButtonStyle}
+            loading={onlyIconLoading}
+            labelAndTextContainer={styles.labelAndTextContainer}
+            iconComponent={
+              <Icon
+                name="rocket"
+                size={20}
+                color="#FFFFFF"
+                style={styles.icon}
+              />
+            }
+            size={15}
+            type={'Wave'}
+            color={'#FFFFFF'}
+            animationDuration={300}
+          />
+          <SpinkitButton
+            width={270}
+            height={40}
+            borderRadius={30}
+            onPress={onlyTextClick}
+            buttonStyle={[styles.base, styles.soild]}
+            label={'ONLY TEXT'}
+            labelStyle={styles.textButtonStyle}
+            loading={onlyTextLoading}
+            size={15}
+            type={'WanderingCubes'}
+            color={'#FFFFFF'}
+            animationDuration={300}
+          />
+          <SpinkitButton
+            width={270}
+            height={40}
+            borderRadius={30}
+            onPress={iconWithTextClick}
+            buttonStyle={[styles.base]}
+            label={'TEXT with ICON'}
+            labelStyle={styles.textButtonStyle}
+            loading={iconAndTextLoading}
+            labelAndTextContainer={styles.labelAndTextContainer}
+            iconComponent={
+              <Icon
+                name="rocket"
+                size={20}
+                color="#FFFFFF"
+                style={styles.icon}
+              />
+            }
+            size={15}
+            type={'Pulse'}
+            color={'#FFFFFF'}
+            animationDuration={300}
+          />
+          <SpinkitButton
+            width={270}
+            height={40}
+            borderRadius={30}
+            onPress={onlyIconClick}
+            buttonStyle={[styles.base]}
+            labelStyle={styles.textButtonStyle}
+            loading={onlyIconLoading}
+            labelAndTextContainer={styles.labelAndTextContainer}
+            iconComponent={
+              <Icon
+                name="rocket"
+                size={20}
+                color="#FFFFFF"
+                style={styles.icon}
+              />
+            }
+            size={15}
+            type={'ChasingDots'}
+            color={'#FFFFFF'}
+            animationDuration={300}
+          />
+          <SpinkitButton
+            width={270}
+            height={40}
+            borderRadius={0}
+            onPress={onlyTextClick}
+            buttonStyle={[styles.base, styles.soild]}
+            label={'ONLY TEXT'}
+            labelStyle={styles.textButtonStyle}
+            loading={onlyTextLoading}
+            size={15}
+            type={'ThreeBounce'}
+            color={'#FFFFFF'}
+            animationDuration={300}
+          />
+          <SpinkitButton
+            width={270}
+            height={40}
+            borderRadius={0}
+            onPress={iconWithTextClick}
+            buttonStyle={[styles.base]}
+            label={'TEXT with ICON'}
+            labelStyle={styles.textButtonStyle}
+            loading={iconAndTextLoading}
+            labelAndTextContainer={styles.labelAndTextContainer}
+            iconComponent={
+              <Icon
+                name="rocket"
+                size={20}
+                color="#FFFFFF"
+                style={styles.icon}
+              />
+            }
+            size={15}
+            type={'Circle'}
+            color={'#FFFFFF'}
+            animationDuration={300}
+          />
+          <SpinkitButton
+            width={270}
+            height={40}
+            borderRadius={0}
+            onPress={onlyIconClick}
+            buttonStyle={[styles.base]}
+            labelStyle={styles.textButtonStyle}
+            loading={onlyIconLoading}
+            labelAndTextContainer={styles.labelAndTextContainer}
+            iconComponent={
+              <Icon
+                name="rocket"
+                size={20}
+                color="#FFFFFF"
+                style={styles.icon}
+              />
+            }
+            size={15}
+            type={'9CubeGrid'}
+            color={'#FFFFFF'}
+            animationDuration={300}
+          />
+        </View>
       </ScrollView>
     </View>
   );
@@ -55,6 +233,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: 30,
     paddingBottom: 30,
+  },
+  innerContainer: {
+    alignItems: 'center',
   },
   text: {
     color: '#FFFFFF',
@@ -77,6 +258,14 @@ const styles = StyleSheet.create({
   },
   textButtonStyle: {
     color: '#FFFFFF',
+  },
+  labelAndTextContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  icon: {
+    marginRight: 10,
+    marginLeft: 10,
   },
 });
 

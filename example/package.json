@@ -10,8 +10,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "17.0.1",
-    "react-native": "0.64.1"
+    "react": "16.13.1",
+    "react-native": "^0.64.1",
+    "react-native-spinkit": "^1.5.1",
+    "react-native-spinkit-button": "file:../react-native-spinkit-button-1.0.0.tgz",
+    "react-native-vector-icons": "^8.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
