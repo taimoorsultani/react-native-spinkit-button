@@ -1,6 +1,6 @@
 {
   "name": "react-native-spinkit-button",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React Native loading buttons, with react-native-spinkit multiple animated loading indicators",
   "main": "src/index.js",
   "scripts": {
