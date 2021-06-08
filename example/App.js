@@ -231,8 +231,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#303030',
     alignItems: 'center',
-    paddingTop: 30,
-    paddingBottom: 30,
+    paddingTop: 11,
+    paddingBottom: 11,
   },
   innerContainer: {
     alignItems: 'center',
@@ -242,7 +242,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
-    paddingBottom: 30,
+    paddingBottom: 10,
   },
   base: {
     padding: 9,
