@@ -13,7 +13,7 @@
     "react": "16.13.1",
     "react-native": "^0.64.1",
     "react-native-spinkit": "^1.5.1",
-    "react-native-spinkit-button": "file:../react-native-spinkit-button-1.1.0.tgz",
+    "react-native-spinkit-button": "^1.2.0",
     "react-native-vector-icons": "^8.1.0"
   },
   "devDependencies": {
