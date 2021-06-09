@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/taimoorsultani/react-native-spinkit-button.git"
   },
-  "files": [
-    "src"
-  ],
   "keywords": [
     "react-native",
     "react-ntive-spinkit",

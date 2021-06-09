@@ -11,14 +11,17 @@
 ### Using npm
 
 ```bash
-npm i react-native-spinkit-button
+npm i react-native-spinkit react-native-spinkit-button react-native-vector-icons
 ```
 
 ### Using yarn
 
 ```bash
-yarn add react-native-spinkit-button
+yarn add react-native-spinkit react-native-spinkit-button react-native-vector-icons
 ```
+
+[react-native-spinkit](https://github.com/maxs15/react-native-spinkit)
+[react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 
 ## Usage
 
@@ -160,7 +163,6 @@ A full working example project is here [react-native-spinkit-button/example](htt
 | color                 |  `#FFFFFF`   |   `string`    | color of spinkit indicator                       |
 | animationDuration     |    `400`     |   `number`    | duration of animation                            |
 
-
 ### List of available spinkit indicator types
 
 - CircleFlip
@@ -181,6 +183,7 @@ A full working example project is here [react-native-spinkit-button/example](htt
 ## Acknowledgment and Big Thanks to
 
 [react-native-spinkit](https://github.com/maxs15/react-native-spinkit)
+[react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 
 ## License
 
