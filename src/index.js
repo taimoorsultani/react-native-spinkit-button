@@ -10,6 +10,7 @@ const SpinkitButton = props => {
     // Button Container
     width,
     height,
+    activeOpacity,
     borderRadius,
     buttonStyle,
     onPress,
@@ -105,7 +106,7 @@ const SpinkitButton = props => {
     <TouchableOpacity
       disabled={disabled || loading}
       onPress={onPress}
-      activeOpacity={1}>
+      activeOpacity={activeOpacity || 1}>
       <Animated.View
         style={[
           buttonStyles.animatedContainer,
@@ -126,6 +127,7 @@ SpinkitButton.prototype = {
   // Button Container
   width: PropTypes.number,
   height: PropTypes.number,
+  activeOpacity: PropTypes.number,
   borderRadius: PropTypes.number,
   buttonStyle: PropTypes.style,
   onPress: PropTypes.func,
@@ -164,6 +166,7 @@ SpinkitButton.defaultProps = {
   // Button Container
   width: 250,
   height: 40,
+  activeOpacity: 0.7,
   borderRadius: 10,
   buttonStyle: {},
   onPress: () => {},
